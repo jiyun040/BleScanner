@@ -381,26 +381,12 @@ class _RegisteredDeviceCard extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const SizedBox(height: 5),
-                Text(
-                  _formatDate(device.createDate),
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodyMedium?.copyWith(fontSize: 12),
-                ),
               ],
             ),
           ),
         ],
       ),
     );
-  }
-
-  String _formatDate(DateTime value) {
-    final local = value.toLocal();
-    String two(int part) => part.toString().padLeft(2, '0');
-    return '${local.year}-${two(local.month)}-${two(local.day)} '
-        '${two(local.hour)}:${two(local.minute)}:${two(local.second)}';
   }
 }
 

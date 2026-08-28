@@ -165,20 +165,6 @@ class _DeviceRegistrationDialogState
                           ),
                         ),
                       ),
-                      const SizedBox(height: 16),
-                      const _CustomInputField(
-                        label: '생성 시각',
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 12,
-                            vertical: 12,
-                          ),
-                          child: Text(
-                            '저장 시 현재 시각으로 자동 생성됩니다.',
-                            style: TextStyle(color: Colors.grey, fontSize: 13),
-                          ),
-                        ),
-                      ),
                       if (_saveError != null) ...[
                         const SizedBox(height: 12),
                         Text(
